@@ -1,10 +1,15 @@
-import Login from './Login';
+// import Login from './Login';
+import './App.css';
+import Nav from './components/nav';
+import Breakfast from './components/breakfast';
 
 const App = () => {
   return (
-    <div>
-      <Login />
-    </div>
+    <main id='main'>
+      <Nav />
+      <Breakfast />
+      {/* <Login /> */}
+    </main>
   );
 };
 
