@@ -4,32 +4,25 @@ body {
   height: 100%;
   margin: 0px;
   box-sizing: border-box;
-  background: whitesmoke;
-}
-
-#main {
-  padding: 35px 60px 0px 60px;
+  background: rgb(245, 245, 245);
 }
 
 .nav {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
 }
 
-.sp {
-  margin: 10px;
-}
 
 .cr-acc {
-  /* padding: 5px 10px; */
   background: rgb(150, 187, 54);
   border-radius: 5px;
   border: 0px solid;
   color: white;
   font-weight: bold;
-  width: 160px;
-  height: 40px;
+  font-size: 10px;
+  width: 140px;
+  height: 30px;
 }
 .cr-acc:hover {
   background: rgb(107, 187, 54);
@@ -40,10 +33,96 @@ body {
   background: whitesmoke;
   border: 1px solid;
   font-weight: bold;
-  width: 90px;
-  height: 40px;
+  font-size: 10px;
+  width: 70px;
+  height: 30px;
+  text-decoration: none;
 }
 .log-in:hover {
   /* box-shadow: 0 0 2em rgba(0, 0, 0, 0.1), inset 0 0 1em rgba(0, 0, 0, 0.1); */
   background-color: rgb(216, 216, 216);
 }
+
+.parag-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.circle-nav {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.or {
+  margin: 10px;
+  color: orange;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(98, 98, 98);
+}
+
+.parag-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.circle-footer {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.copy-footer{
+  color: white;
+}
+
+.login{
+  display: flex;
+  align-items:baseline;
+  padding: 0px 95px 0px 95px;
+}
+.h2-modif{
+  margin-right: 9px;
+  color:rgb(150, 187, 54)
+}
+.hr-lane{
+  flex: 1;
+  height: 1px;
+  background-color:rgba(216,216,216);
+}
+
+.head-div-login{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-div-left{
+  display: flex;
+  flex-direction: column;
+}
+
+.span-log{
+  inline-size: 400px;
+}
+
+.orange-text{
+  color: orange;
+}
+
