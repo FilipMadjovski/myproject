@@ -13,7 +13,6 @@ body {
   justify-content: space-evenly;
 }
 
-
 .cr-acc {
   background: rgb(150, 187, 54);
   border-radius: 5px;
@@ -28,7 +27,7 @@ body {
   background: rgb(107, 187, 54);
 }
 
-.log-in{
+.log-in {
   border-radius: 5px;
   background: whitesmoke;
   border: 1px solid;
@@ -36,6 +35,12 @@ body {
   font-size: 10px;
   width: 70px;
   height: 30px;
+}
+
+.log-in a {
+  text-decoration: none;
+}
+.cr-acc a {
   text-decoration: none;
 }
 .log-in:hover {
@@ -65,7 +70,7 @@ body {
   color: orange;
 }
 
-.footer{
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -74,7 +79,7 @@ body {
   background-color: rgb(98, 98, 98);
 }
 
-.parag-footer{
+.parag-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,40 +94,107 @@ body {
   margin: 10px;
 }
 
-.copy-footer{
+.copy-footer {
   color: white;
 }
 
-.login{
+.login {
   display: flex;
-  align-items:baseline;
-  padding: 0px 95px 0px 95px;
+  align-items: baseline;
+  padding: 0px 152px 0px 159px;
 }
-.h2-modif{
+.h2-modif {
   margin-right: 9px;
-  color:rgb(150, 187, 54)
+  color: rgb(150, 187, 54);
 }
-.hr-lane{
+.hr-lane {
   flex: 1;
   height: 1px;
-  background-color:rgba(216,216,216);
+  background-color: rgba(216, 216, 216);
 }
 
-.head-div-login{
-  display:flex;
+.head-div-login {
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
+  min-height: 59vh;
 }
-.login-div-left{
+.login-div-left {
   display: flex;
   flex-direction: column;
 }
 
-.span-log{
+.span-log {
   inline-size: 400px;
+  color: grey;
 }
 
-.orange-text{
+.orange-text {
+  color: orange;
+}
+.grey-baby {
+  color: grey;
+}
+
+.em {
+  margin-bottom: 5px;
+}
+.pw {
+  margin-bottom: 5px;
+}
+.login-div-right {
   color: orange;
 }
 
+.login-login {
+  display: block;
+  margin-top: 25px;
+  background: rgb(150, 187, 54);
+  border-radius: 5px;
+  border: 0px solid;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  width: 90px;
+  height: 28px;
+}
+.cracc-head-div {
+  display: flex;
+  align-items: center;
+  padding-left: 159px;
+  color: orange;
+  min-height: 59vh;
+}
+.span-logg{
+  inline-size: 270px;
+  color: grey;
+}
+
+.grey-babyy{
+  color: grey;
+  margin-top: -25px;
+}
+
+.cracc-div-middle{
+  margin: 57px 25px 0px 55px;
+}
+
+.cracc-cracc{
+    display: block;
+    margin-top: 30px;
+    background: rgb(150, 187, 54);
+    border-radius: 5px;
+    border: 0px solid;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    width: 140px;
+    height: 28px;
+}
+
+.bckgr-in{
+  background: whitesmoke;
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding: 5px 10px 5px 10px;
+}

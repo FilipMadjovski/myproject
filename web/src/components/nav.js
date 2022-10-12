@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <nav className='nav'>
       <span className='img-nav'>
-        <img src='/images/navBaby.png' alt='babyNav' />
+        <Link to='/home'><img src='/images/navBaby.png' alt='babyNav' /></Link>
       </span>
       <div className='parag-nav'>
         <p className='par'>BREAKFAST</p>
@@ -18,7 +18,7 @@ const Nav = () => {
       <div className='nav-buttons'>
         <button className='log-in'><Link to='/login'>LOG IN</Link></button>
         <span className='or'>or</span>
-        <button className='cr-acc'>CRAETE ACCOUNT</button>
+        <button className='cr-acc'> <Link to='/createacc'>CRAETE ACCOUNT</Link> </button>
       </div>
     </nav>
   );
