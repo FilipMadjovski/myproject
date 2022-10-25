@@ -1,10 +1,11 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Nav from './components/nav';
 // import Breakfast from './components/breakfast';
 import Footer from './components/footer';
 import Login from './components/login';
 import Createacc from './components/createacc';
-import { Routes, Route } from 'react-router-dom';
+import MyProfile from './components/myprofile';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path='/login' element={<Login />} />
         <Route path='/createacc' element={<Createacc />} />
+        <Route path='/myprofile' element={<MyProfile />} />
       </Routes>
       <Footer />
     </main>

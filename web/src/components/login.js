@@ -1,4 +1,10 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <div>
       <div className='login'>
@@ -20,10 +26,26 @@ const Login = () => {
         </div>
         <div className='login-div-right'>
           <p className='em'>Email</p>
-          <input className='bckgr-in' type='email' placeholder='user@domain.com' />
+          <input
+            className='bckgr-in'
+            type='email'
+            placeholder='user@domain.com'
+            value={email}
+            onChnage={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
           <p className='pw'>Password</p>
-          <input className='bckgr-in' type='password' placeholder='******' />
-          <button className='login-login'>LOG IN</button>
+          <input
+            className='bckgr-in'
+            type='password'
+            placeholder='******'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button className='login-login'>
+            <Link to="/myprofile">LOG IN</Link>
+          </button>
         </div>
       </div>
     </div>

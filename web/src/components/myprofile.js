@@ -1,33 +1,24 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-const Createacc = () => {
+const MyProfile = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [password, setPassword] = useState('');
   const [repPassword, setRepPassword] = useState('');
   const [email, setEmail] = useState('');
   const [birthday, setBirthday] = useState('');
-
   return (
     <div>
       <div className='login'>
-        <h2 className='h2-modif'>Create Account</h2>
+        <h2 className='h2-modif'>My Profile</h2>
         <div className='hr-lane' />
       </div>
       <div className='cracc-head-div'>
-        <div className='cracc-div-left'>
-          <h1>
-            <span className='orange-text'>Create your</span>
-          </h1>
-          <h1 className='grey-babyy'>account</h1>
-          <p className='span-logg'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliquip ex ea
-            commodo consequat. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit.
-          </p>
+        <div className='avatar'>
+          <span>
+            <img className='avatar-img' src='/images/avatar1.png' alt='Avatar' />
+          </span>
+          <button>CHANGE AVATAR</button>
         </div>
         <div className='cracc-div-middle'>
           <p className='em'>First Name</p>
@@ -60,9 +51,7 @@ const Createacc = () => {
               setPassword(e.target.value);
             }}
           />
-          <button className='cracc-cracc'>
-            <Link to="/login">CREATE ACCOUNT</Link>
-          </button>
+          <button className='avatar-save'>SAVE</button>
         </div>
         <div className='cracc-div-right'>
           <p className='em'>Last Name</p>
@@ -101,4 +90,4 @@ const Createacc = () => {
   );
 };
 
-export default Createacc;
+export default MyProfile;
