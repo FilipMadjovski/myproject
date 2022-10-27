@@ -31,7 +31,7 @@ const Login = () => {
             type='email'
             placeholder='user@domain.com'
             value={email}
-            onChnage={(e) => {
+            onChange={(e) => {
               setEmail(e.target.value);
             }}
           />
@@ -39,12 +39,14 @@ const Login = () => {
           <input
             className='bckgr-in'
             type='password'
-            placeholder='******'
+            placeholder='*****'
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
           />
           <button className='login-login'>
-            <Link to="/myprofile">LOG IN</Link>
+            <Link to='/myprofile'>LOG IN</Link>
           </button>
         </div>
       </div>
